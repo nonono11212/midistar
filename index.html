@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIDISTAR | Дизайнер</title>
+    <title>MIDISTAR | Дизайнер аватар</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -64,6 +64,20 @@
         .work-card:hover .project-image {
             transform: scale(1.03);
         }
+        
+        /* Стиль для кнопки Telegram */
+        .tg-button {
+            background: rgba(248, 200, 220, 0.1);
+            border: 1px solid rgba(248, 200, 220, 0.3);
+            color: #f8c8dc;
+            transition: all 0.3s ease;
+        }
+        
+        .tg-button:hover {
+            background: rgba(248, 200, 220, 0.2);
+            border-color: rgba(248, 200, 220, 0.5);
+            box-shadow: 0 0 15px rgba(248, 200, 220, 0.1);
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -100,7 +114,7 @@
                 <span class="gradient-text">MIDISTAR</span>
             </h1>
             <p class="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-                Графический дизайнер
+                Специалист по созданию стильных аватар
             </p>
         </div>
     </section>
@@ -109,20 +123,21 @@
     <section id="works" class="py-16 px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-black">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-                <span class="gradient-text">Работы</span>
+                <span class="gradient-text">Мои аватары</span>
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Work 1 -->
                 <div class="work-card bg-gray-900 rounded-lg overflow-hidden">
                     <div class="h-64 overflow-hidden">
-                        <img src="images/work1.jpg" alt="Статичная аватарка 1" class="project-image">
+                        <img src="images/work1.jpg" alt="Аватар 1" class="project-image">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Статичная аватарка</h3>
-                        <p class="text-gray-400 mb-4"></p>
+                        <h3 class="text-xl font-semibold mb-2">Фирменный стиль</h3>
+                        <p class="text-gray-400 mb-4">Чистый минимализм с акцентом на типографику</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-sm pink-accent">2025</span>
+                            <span class="text-sm pink-accent">2024</span>
+                            <span class="text-xs px-2 py-1 bg-gray-800 rounded-full">Minimal</span>
                         </div>
                     </div>
                 </div>
@@ -130,13 +145,14 @@
                 <!-- Work 2 -->
                 <div class="work-card bg-gray-900 rounded-lg overflow-hidden">
                     <div class="h-64 overflow-hidden">
-                        <img src="images/work2.jpg" alt="Статичная аватарка 2" class="project-image">
+                        <img src="images/work2.jpg" alt="Аватар 2" class="project-image">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Статичная аватарка</h3>
-                        <p class="text-gray-400 mb-4"></p>
+                        <h3 class="text-xl font-semibold mb-2">Сладкая коллекция</h3>
+                        <p class="text-gray-400 mb-4">Игра с текстурой и цветами</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-sm pink-accent">2025</span>
+                            <span class="text-sm pink-accent">2024</span>
+                            <span class="text-xs px-2 py-1 bg-gray-800 rounded-full">Pastel</span>
                         </div>
                     </div>
                 </div>
@@ -144,13 +160,14 @@
                 <!-- Work 3 -->
                 <div class="work-card bg-gray-900 rounded-lg overflow-hidden">
                     <div class="h-64 overflow-hidden">
-                        <img src="images/work3.jpg" alt="Статичная аватарка 3" class="project-image">
+                        <img src="images/work3.jpg" alt="Аватар 3" class="project-image">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Статичная аватарка</h3>
-                        <p class="text-gray-400 mb-4"></p>
+                        <h3 class="text-xl font-semibold mb-2">Экспериментальный стиль</h3>
+                        <p class="text-gray-400 mb-4">Смешение шрифтов и абстракции</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-sm pink-accent">2025</span>
+                            <span class="text-sm pink-accent">2024</span>
+                            <span class="text-xs px-2 py-1 bg-gray-800 rounded-full">Abstract</span>
                         </div>
                     </div>
                 </div>
@@ -169,19 +186,19 @@
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="gradient-text">Обо мне</span>
+                        <span class="gradient-text">О создателе</span>
                     </h2>
                     <p class="text-gray-400 mb-4">
-                        Я дизайнер. Моя цель — создавать визуальные решения, которые не только красивы, но и эффективно решают поставленные задачи.
+                        Специализируюсь на создании уникальных аватар с характером. Каждая работа - это сочетание типографики, цвета и настроения.
                     </p>
                     <p class="text-gray-400 mb-6">
-                        В своей работе я сочетаю современные тенденции с классическими принципами дизайна, уделяя особое внимание деталям.
+                        Вдохновляюсь современной цифровой культурой, модой и уличным искусством.
                     </p>
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm">Брендинг</span>
-                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm pink-accent">Графический дизайн</span>
-                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm">UI/UX</span>
+                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm">Аватарки</span>
                         <span class="px-3 py-1 bg-gray-900 rounded-full text-sm pink-accent">Типографика</span>
+                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm">Минимализм</span>
+                        <span class="px-3 py-1 bg-gray-900 rounded-full text-sm pink-accent">Эксперименты</span>
                     </div>
                 </div>
             </div>
@@ -190,27 +207,18 @@
     
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-black">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                        <span class="gradient-text">Контакты</span>
-                    </h2>
-                    <p class="text-gray-400 mb-6">
-                        Для сотрудничества и вопросов свяжитесь со мной в Telegram.
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <div class="w-10 h-10 rounded-full pink-bg text-gray-900 flex items-center justify-center mr-4">
-                                <i class="fab fa-telegram"></i>
-                            </div>
-                            <div>
-                                <a href="https://t.me/PepeWhiteNE" class="hover-pink" target="_blank">@PepeWhiteNE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <span class="gradient-text">Связь со мной</span>
+            </h2>
+            
+            <div class="flex justify-center">
+                <a href="https://t.me/PepeWhiteNE" 
+                   class="px-8 py-4 rounded-lg tg-button flex items-center justify-center gap-3" 
+                   target="_blank">
+                    <i class="fab fa-telegram text-2xl"></i>
+                    <span class="text-lg">@PepeWhiteNE</span>
+                </a>
             </div>
         </div>
     </section>
@@ -223,11 +231,13 @@
                     <span class="text-xl font-medium gradient-text">MIDISTAR</span>
                 </div>
                 <div class="flex space-x-6">
-                    <span class="text-gray-400 hover-pink"><i class="fab fa-telegram"></i></span>
+                    <a href="https://t.me/PepeWhiteNE" class="text-gray-400 hover:text-pink-300 text-xl transition-colors" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
                 </div>
             </div>
             <div class="mt-6 text-center md:text-left text-sm text-gray-500">
-                © 2023 Все права защищены. Сделано с <i class="fas fa-heart pink-accent"></i>
+                © 2024 Все права защищены. Сделано с <i class="fas fa-heart pink-accent"></i>
             </div>
         </div>
     </footer>
